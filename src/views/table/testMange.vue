@@ -6,18 +6,33 @@
 
       <el-row>
         <el-col :span="4"><div class="grid-content bg-purple">
-          <el-input v-model="input" placeholder="请输入内容"></el-input>
+          <el-input v-model="input" placeholder="按委托编号搜索"></el-input>
         </div></el-col>
         <el-col :span="4"><div class="grid-content bg-purple-light">
-          <el-input v-model="input" placeholder="请输入内容"></el-input>
+          <el-input v-model="input" placeholder="按报告编号搜索"></el-input>
 
         </div></el-col>
         <el-col :span="4"><div class="grid-content bg-purple">
-          <el-input v-model="input" placeholder="请输入内容"></el-input>
+          <el-input v-model="input" placeholder="按批号搜索"></el-input>
 
         </div></el-col>
-        <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
-        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="8"><div class="grid-content bg-purple-light">
+          <div class="block">
+            <el-date-picker
+              v-model="value1"
+              type="date"
+              placeholder="开始日期">
+            </el-date-picker>
+          </div>
+          <div class="block">
+            <el-date-picker
+              v-model="value1"
+              type="date"
+              placeholder="结束日期">
+            </el-date-picker>
+          </div>
+        </div></el-col>
+        <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
       </el-row>
 
 
@@ -41,15 +56,10 @@ export default {
   data(){
     return {
       activeName: 'first',
-      input: ''
-    }
-  },
-  methods: {
-    handleClick(tab, event) {
-      console.log(tab, event);
-    }
-  }
-}
+      input: '',
+      value1: '',
+      value2: '',
+  }}}
 </script>
 
 <style scoped lang="less">
