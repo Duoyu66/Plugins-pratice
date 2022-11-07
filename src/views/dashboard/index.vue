@@ -7,7 +7,8 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import screenfull from 'screenfull'
+
+
 export default {
   name: 'Dashboard',
   computed: {
@@ -16,17 +17,6 @@ export default {
     ])
   },
   methods:{
-    click(){
-      // 判断是否支持
-      if (!screenfull.enabled) {
-        this.$message({
-          message: "不支持全屏",
-          type: "warning"
-        });
-        return false;
-      }
-      screenfull.toggle();
-    }
   }
 }
 </script>

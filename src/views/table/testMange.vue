@@ -8,8 +8,14 @@
         <el-col :span="4"><div class="grid-content bg-purple">
           <el-input v-model="input" placeholder="请输入内容"></el-input>
         </div></el-col>
-        <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
-        <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="4"><div class="grid-content bg-purple-light">
+          <el-input v-model="input" placeholder="请输入内容"></el-input>
+
+        </div></el-col>
+        <el-col :span="4"><div class="grid-content bg-purple">
+          <el-input v-model="input" placeholder="请输入内容"></el-input>
+
+        </div></el-col>
         <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
         <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
       </el-row>
