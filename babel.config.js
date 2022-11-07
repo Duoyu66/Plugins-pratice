@@ -1,5 +1,6 @@
 module.exports = {
   presets: [
+    // [ "@vue/app", { useBuiltIns: "entry" } ],
     // https://github.com/vuejs/vue-cli/tree/master/packages/@vue/babel-preset-app
     '@vue/cli-plugin-babel/preset'
   ],
